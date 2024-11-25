@@ -1,0 +1,260 @@
+body{
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2,h3,h4,h5,p,a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: white;
+    background: linear-gradient(70deg, rgba(10, 10, 10, 1),  rgb(1, 100, 122) 40%,  rgba(50, 50, 50, 0.9) 70%);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+     
+}
+.container h1{
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+.container h2{
+    font-size: 1.5vw;
+}
+header img {
+
+border-radius: 50%;
+ width: 8%;
+ height: auto;
+}
+.page {
+    color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 100%; 
+    margin-bottom: auto;
+    gap: 20px;
+}
+main{
+    font-size: 1.2vw;
+    flex: 2.5; 
+    
+    
+}
+main h3{
+    margin: 10px 0;
+}
+.experiences{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.experience{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 20px;
+    font-size: 1vw;
+    display: flex;  
+    flex-wrap: wrap;
+    max-width: 26%;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    transition: transform 0.3s ease;
+}
+.experience:hover{
+    transform: translateY(-5px)
+}
+.experience div{
+    flex: 1;
+}
+.experience img{
+    padding: 10px;
+    float: right;
+    width: 15%;
+    height: 16%;
+}
+aside{
+    flex: 1.5; 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 0 20px;
+}
+.competences{
+    padding: 0 20px;
+    font-size: 1vw;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9); 
+
+}
+.competence{
+    align-items: center;
+    display: flex;
+    font-size: 0.8vw;
+}
+.competence img{
+    margin-right: 10px;
+    width: 3%;
+    height: 3%;
+}
+.formations{
+    padding: 0 20px;
+    font-size: 1vw;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+.formation{
+    font-size: 0.8vw;
+}
+.liens{
+    padding: 0 20px;
+    font-size: 1vw;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 5px;
+}
+.lien{
+    margin-bottom: 20px;
+    font-size: 0.8vw;
+    align-items: center;
+    display: flex;
+    float: left;
+}
+.lien a{
+    font-weight: bold;
+    color: black;
+}
+.lien img{
+    margin-right: 10px;
+    width: 5%;
+    height: 5%;
+}
+footer{
+    margin-bottom: 0;
+    font-size: 0.6vw;
+    color: white;
+    text-align: center;
+    padding:15px 0px;
+    background: linear-gradient(290deg, rgba(10, 10, 10, 1),  rgb(1, 100, 122) 40%,  rgba(50, 50, 50, 0.9) 70%);
+}
+/*Tablette*/
+@media (max-width: 800px){
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        
+        font-size: 14px;
+        max-width: 100%;
+        margin: 0;
+    }
+    .container h1{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .container h2{
+        font-size: 14px;
+    }
+
+    header img {
+       display: none;
+    }
+
+    .page {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    .experiences {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience {
+        font-size: 0.9em;
+        
+        max-width: 100%;
+    }
+    .experience p{
+        font-size: 0.8em;
+        
+        max-width: 100%;
+    }
+
+    aside {
+        padding: 0;
+    }
+
+    .competences, .formations, .liens {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .competence {
+        font-size: 0.8em;
+    }
+
+    .competence img {
+        width: 3%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .formation{
+        font-size: 10px;
+    }
+    .lien{
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px 0;
+    }
+    
+}
+/*Telephone*/
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+     .container h1{
+        font-size: 16px;
+    }
+    .container h2{
+        font-size: 12px;
+    }
+
+    header img {
+        display: none;
+    }
+    .page {
+        flex-direction: column;
+    }  
+}
+/*By Quentin.π*/
